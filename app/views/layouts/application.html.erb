@@ -1,0 +1,83 @@
+<!DO-CTYPE html>
+<html>
+	<head>
+		<title>Website</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+		  
+		
+		<link href="stylesheets/style.css" rel="stylesheet">
+	  
+	</head>
+	
+	<body>
+		<header>
+			<nav class= "my-navbar navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="<%= root_path%>"> <img src="assets/Logo.png" width="180" height="27"> </a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li>
+								<a href="<%= tasks_path%>">M&A Advisors</a>
+							</li>
+							
+							<li>
+								<a href="<%= pays_path%>">Pay & Bonus</a>
+							</li>
+							
+							<li>
+								<a href="<%= posts_path%>">Insight</a>
+							</li>
+							
+							<li>
+								<a href="<%= faqs_path%>">FAQ</a>
+							</li>
+			
+							<li>
+								<a href="<%= recruiters_path%>">Recruiters</a>
+							</li>
+	
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<%= yield %><!our view gets injected here. --
+		  
+	</body>
+
+	<footer class="footer-distributed">
+		<div class="container"> 
+			<div class="row text-md-left">
+				
+				<div class="col-sm-4">
+					<h6>About ebitdada</h6>
+					<p class = "footer-text">A team of current and former bankers and M&A advisors aiming to bring some much needed transparency into the world of M&A.</p>
+				</div>
+				
+				<div class="col-sm-4">
+					<h6>Contact us</h6>
+					<p class = "footer-text">To come</p>
+				</div>
+				
+				<div class="col-sm-4">
+					<h6>Legal</h6>
+					<p class = "footer-text">To come</p>
+				</div>
+				
+			</div>
+		</div>
+	</footer>	
+</html>

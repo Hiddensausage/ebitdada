@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="stylesheets/style.css" rel="stylesheet">
+
+	</head>
+
+	<body class = "toppadding">
+		<div class="container">
+				
+				<h1><%= @task.description %></h1>
+				<span class="label label-default"><%= @task.group %></span>
+				<span class="label label-default"><%= @task.location %></span>
+				<span class="label label-default"><%= @task.sector %></span>
+		
+			 
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>The Basics</h3>
+					<table class="table table-hover">
+						<tbody class = "tabletext">
+							
+							<tr>
+							<td>UK team size</td>
+							<td><%= @task.team_size %></td>
+							</tr>	
+							
+							<tr>
+							<td>UK office(s)</td>
+							<td><%= @task.uk_location %></td>
+							</tr>
+  
+							<tr>
+							<td>Internships:</td>
+							<td><%= @task.intern %></td>									
+							</tr>
+							
+							<tr>
+							<td>Graduates:</td>
+							<td><%= @task.grad %></td>
+							</tr>	
+						
+							<tr>
+							<td>How to apply:</td>
+							<td><%= @task.cons %></td>
+							</tr>	
+						
+						</tbody>
+					</table>
+					
+					<h3>Insight</h3>
+					<div class="panel panel-footer">
+							<div class="panel-body">								
+							<tr>
+							<td><small><%= simple_format(@task.pros) %></small></td>
+							</tr>
+							</div>
+					</div>
+					
+				</div>		
+						
+				<div class="col-sm-6">
+					<!-- Code below left unaltered from google example -->
+					<h3>Location</h3><p><%= @task.address %></p>
+					<meta name="viewport" content="initial-scale=1.0">
+					<meta charset="utf-8">
+					<style>
+					  #map {
+						height: 100%;
+					  }
+					  
+					  html, body {
+						height: 80%;
+						margin: 0;
+						padding: 0;
+					  }
+					</style>
+					  
+					<body>
+					<div id="map"></div>
+					<script>
+						function initMap() {
+							var myCenter = new google.maps.LatLng(<%= @task.latitude %>,<%= @task.longitude %>);
+							var mapCanvas = document.getElementById("map");
+							var mapOptions = {center: myCenter, zoom: 15};
+							var map = new google.maps.Map(mapCanvas, mapOptions);
+							var marker = new google.maps.Marker({position:myCenter});
+							marker.setMap(map);
+						}	
+					</script>
+					
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd92RusGDj-ImHWHaUQu-3FRKwD1wg5DU&callback=initMap"async defer>
+					</script>
+					</body>
+						
+					<br>
+					
+					<div class="well">
+					<h5 class = "posttitle">Something to add, or something missing? Contact us anonymously</h5><br>
+					<%= link_to "Click here", contacts_path, class: "btn btn-danger" %>
+					</div>
+					
+				</div>			
+			</div>
+					
+		</div>
+			
+		</div><!--/row-->
+	</body>
+</html>
+
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="offcanvas.js"></script>

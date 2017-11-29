@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+    
+	<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="offcanvas.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	
+  </head>
+	<body class="toppadding">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+					  <%= form_for @pay do |x| %>
+					  
+					  <p>
+					 <%= x.label :name %><br/>
+					 <%= x.text_field :name, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :analyst_base_low %><br/>
+					 <%= x.number_field :analystbaselow, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :analyst_base_high %><br/>
+					 <%= x.number_field :analystbasehigh, class: 'form-control' %><br/>
+					</p>
+					
+					<p>
+					 <%= x.label :analyst_bonus_low %><br/>
+					 <%= x.number_field :analystbonuslow, class: 'form-control' %><br/>
+					</p>
+					
+					<p>
+					 <%= x.label :analyst_base_high %><br/>
+					 <%= x.number_field :analystbonushigh, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :associate_base_low %><br/>
+					 <%= x.number_field :associatebaselow, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :associate_base_high %><br/>
+					 <%= x.number_field :associatebasehigh, class: 'form-control' %><br/>
+					</p>
+					
+					<p>
+					 <%= x.label :associate_bonus_low %><br/>
+					 <%= x.number_field :associatebonuslow, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :associate_bonus_high %><br/>
+					 <%= x.number_field :associatebonushigh, class: 'form-control' %><br/>
+					</p>
+					
+					<p>
+					 <%= x.label :vp_base_low %><br/>
+					 <%= x.number_field :vpbaselow, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :vp_base_high %><br/>
+					 <%= x.number_field :vpbasehigh, class: 'form-control' %><br/>
+					</p>
+					
+					<p>
+					 <%= x.label :vp_bonus_low %><br/>
+					 <%= x.number_field :vpbonuslow, class: 'form-control' %><br/>
+					</p>
+					
+					 <p>
+					 <%= x.label :vp_bonus_high %><br/>
+					 <%= x.number_field :vpbonushigh, class: 'form-control' %><br/>
+					</p>
+					
+					<p>
+					 <%= x.submit "Add a new advisor" %>
+					 </p>
+					
+					
+					<% end %>
+			</div>
+		</div>
+	</body>

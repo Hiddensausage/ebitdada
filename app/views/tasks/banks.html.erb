@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="stylesheets/style.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<section class = "sectioncolourone">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2"  align = "center">
+					</div>
+					<div class="col-sm-2"  align = "center">
+						<%= link_to tasks_path do
+							image_tag("list-xxl-grey.png", onmouseover: "this.src='#{asset_path('list-xxl-black.png')}'", onmouseout: "this.src='#{asset_path('list-xxl-grey.png')}'",:size => "120x120")
+							end %>
+						<div class="caption">
+						<h3>M&A Advisors</h3>
+						</div>
+					</div>
+					
+					<div class="col-sm-2"  align = "center">
+						<%= link_to pays_path do
+							image_tag("bonus-grey.png", onmouseover: "this.src='#{asset_path('bonus-black.png')}'", onmouseout: "this.src='#{asset_path('bonus-grey.png')}'",:size => "120x120")
+							end %>
+						<div class="caption">
+						<h3>Pay & Bonus</h3>
+						</div>
+					</div>
+					
+					<div class="col-sm-2" align = "center">
+						<%= link_to recruiters_path do
+							image_tag("recruit-grey.png", onmouseover: "this.src='#{asset_path('recruit-black.png')}'", onmouseout: "this.src='#{asset_path('recruit-grey.png')}'",:size => "120x120")
+							end %>
+						<div class="caption">
+						<h3>Recruiters</h3>
+						</div>
+					</div>
+					
+					<div class="col-sm-2" align = "center">
+						<%= link_to posts_path do
+							image_tag("Insight-grey.png", onmouseover: "this.src='#{asset_path('Insight-black.png')}'", onmouseout: "this.src='#{asset_path('Insight-grey.png')}'",:size => "120x120")
+							end %>
+						<div class="caption">
+						<h3>Tips & Insight</h3>
+						</div>
+					</div>
+					
+					<div class="col-sm-2"  align = "center">
+					</div>	
+				</div>
+			</div>	
+		</section>
+		
+		<section class = "sectioncolourtwo">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-sm-4">
+					<%= render partial: 'posts/post', locals: { post: Post.last } %>
+					</div>
+				
+					<div class="col-sm-4">
+					<%= render partial: 'posts/post', locals: { post: Post.last } %>
+					</div>
+					
+					<div class="col-sm-4">
+						<div class="well">
+						<h5 class = "posttitle">Send news and views to our team using our anonymous form</h5><br>
+						<%= link_to "Click here", contacts_path, class: "btn btn-danger" %>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

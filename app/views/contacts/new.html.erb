@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Bare - Start Bootstrap Template</title>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="stylesheets/style.css" rel="stylesheet">
+		
+	</head>
+		
+	<body class = "toppadding">
+		<div class="container"> 
+			<h1>Contact us anonymously below</h1><br>
+			
+			<div class="col-sm-7">
+	  
+				<%= form_for @contact do |f| %>
+				
+				<p>
+				<%= f.label "Name (optional)" %><br/>
+				<%= f.text_field :name, :size => 50  %>
+				</p>
+				
+				<p>
+				<%= f.label "email (optional)" %><br/>
+				<%= f.text_field :email,:size => 50 %>
+				</p>
+				
+				<p>
+				<%= f.label "Message" %><br/>
+				<%= f.text_area :message, cols: "100", rows: "10" %>
+				</p>
+				
+				<p>
+				<%= f.submit "Send", class: "btn btn-danger" %>
+				</p>
+		
+				<% end %>
+			</div>
+		</div>
+	</body>

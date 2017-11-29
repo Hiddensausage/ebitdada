@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  2015: 1
+  2014: 1
+  2013: 1
+
+two:
+  name: MyString
+  2015: 1
+  2014: 1
+  2013: 1

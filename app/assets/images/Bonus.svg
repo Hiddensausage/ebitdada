@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="299.51999"
+   height="299.51999"
+   viewBox="0 0 299.51999 299.51999"
+   sodipodi:docname="recruit.svg"
+   inkscape:export-filename="C:\row\rails_project\website\app\assets\images\bonus-black.png"
+   inkscape:export-xdpi="199.664"
+   inkscape:export-ydpi="199.664"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="1.05"
+     inkscape:cx="38.560414"
+     inkscape:cy="149.75999"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="opacity:1;fill:#6f9fce;fill-opacity:0.98039216;fill-rule:evenodd;stroke:none;stroke-width:1.02623999;stroke-opacity:0.39215686"
+     id="path4487"
+     sodipodi:type="arc"
+     sodipodi:cx="149.27509"
+     sodipodi:cy="150.90921"
+     sodipodi:rx="149.12543"
+     sodipodi:ry="149.12541"
+     sodipodi:start="6.248907"
+     sodipodi:end="6.2292372"
+     sodipodi:open="true"
+     d="M 298.31291,145.79844 A 149.12543,149.12541 0 0 1 155.11867,299.92009 149.12543,149.12541 0 0 1 0.29473186,157.48548 149.12543,149.12541 0 0 1 141.9663,1.9630115 149.12543,149.12541 0 0 1 298.18356,142.86808"
+     inkscape:export-xdpi="199.664"
+     inkscape:export-ydpi="199.664" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:140.96562195px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.5241406;"
+     x="90.93721"
+     y="207.21901"
+     id="text19"
+     transform="scale(1.0960514,0.91236598)"><tspan
+       sodipodi:role="line"
+       id="tspan17"
+       x="90.93721"
+       y="207.21901"
+       style="fill:#ffffff;stroke-width:3.5241406;fill-opacity:1;">$</tspan></text>
+</svg>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  analystbaselow: 1
+  analystbasehigh: 1
+  analystbonuslow: 1
+  analystbonushigh: 1
+
+two:
+  name: MyString
+  analystbaselow: 1
+  analystbasehigh: 1
+  analystbonuslow: 1
+  analystbonushigh: 1

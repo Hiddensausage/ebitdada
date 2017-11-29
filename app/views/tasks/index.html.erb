@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Bare - Start Bootstrap Template</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+
+	
+</head>
+
+<body class="toppadding">
+	<div class="container">
+	
+		<div class="row">
+			<h1>Listing of leading UK M&A advisors</h1>
+			<p class="lead"></p>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-8 text-left">
+				<div class="table-responsive">
+					<table id="example" class="table table-hover">
+						<thead class = "tabletext">                         
+							<tr>                          
+								<th>Name</th>
+								<th>Type</th>
+								<th>UK Team size</th>
+								<th>Sector Focus</th>
+							</tr>
+						</thead>
+	
+						<tbody class = "tabletext">
+							<% @tasks.each do |data| %>       
+								<tr class="clickable-row" data-href='<%= task_path(data)%>'>
+									<td><%= data.description %></td>  
+									<td><%= data.group %></td>
+									<td><%= data.team_size %></td>
+									<td><%= data.sector %></td>
+									</tr>
+								<% end %>
+						</tbody>
+					
+					<script>
+						jQuery(document).ready(function($) {
+						$(".clickable-row").click(function() {
+						window.location = $(this).data("href");
+						});
+						});
+					</script>	
+					
+					</table>	
+				</div>
+			</div>
+		
+			<div class="col-sm-4">
+				<div class="well">
+					<h5 class = "posttitle">Is your firm missing or do you have information to share? Let us know</h5><br>
+					<%= link_to "Click here", contacts_path, class: "btn btn-danger" %>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- class='clickable-row' data-href='tasks/9' -->

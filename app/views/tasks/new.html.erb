@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+	
+	 <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+				  <%= form_for @task do |x| %>
+				  
+				  <p>
+				 <%= x.label :description %><br/>
+				 <%= x.text_field :description, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :group %><br/>
+				 <%= x.text_field :group, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :locations %><br/>
+				 <%= x.text_field :location, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :sector %><br/>
+				 <%= x.text_field :sector, class: 'form-control' %><br/>
+				</p>				
+				
+				<p>
+				 <%= x.label :uk_team_size %><br/>
+				 <%= x.text_field :team_size, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :uk_location %><br/>
+				 <%= x.text_field :uk_location, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :intern %><br/>
+				 <%= x.text_field :intern, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :grad %><br/>
+				 <%= x.text_field :grad, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :rev14 %><br/>
+				 <%= x.text_field :rev14, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :rev15 %><br/>
+				 <%= x.text_field :rev15, class: 'form-control' %><br/>
+				</p>
+				
+				 <p>
+				 <%= x.label :rev16 %><br/>
+				 <%= x.text_field :rev16, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :rev17 %><br/>
+				 <%= x.text_field :rev17, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :analystpay %><br/>
+				 <%= x.text_field :analystpay, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :associatepay %><br/>
+				 <%= x.text_field :associatepay, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :vppay %><br/>
+				 <%= x.text_field :vppay, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :directorpay %><br/>
+				 <%= x.text_field :directorpay, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :mdpay %><br/>
+				 <%= x.text_field :mdpay, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :analystbonus %><br/>
+				 <%= x.text_field :analystbonus, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :associatebonus %><br/>
+				 <%= x.text_field :associatebonus, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :vpbonus %><br/>
+				 <%= x.text_field :vpbonus, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :directorbonus %><br/>
+				 <%= x.text_field :directorbonus, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :pros %><br/>
+				 <%= x.text_field :pros, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :cons %><br/>
+				 <%= x.text_field :cons, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				 <%= x.label :address %><br/>
+				 <%= x.text_field :address, class: 'form-control' %><br/>
+				</p>				
+				
+				<p>
+				 <%= x.submit "Add a new advisor" %>
+				 </p>
+				
+				
+				<% end %>
+				</div>
+		</div>
+	</div>

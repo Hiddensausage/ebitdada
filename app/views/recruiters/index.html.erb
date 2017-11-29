@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="stylesheets/style.css" rel="stylesheet">
+		
+	</head>
+	
+	<body class = "toppadding">
+		<div class="container">	
+			<div class="row"> 
+				<h1>Overview of relevant recruiters</h1>
+				
+				<div class="col-sm-8 text-left">
+					<div class="table-responsive">
+						<table id="example" class="table table-hover">
+							<thead class = "tabletext">
+								<tr>                          
+									<th>Name</th>
+									<th class = "tablealign">Grads</th>
+									<th class = "tablealign">Analyst</th>
+									<th class = "tablealign">Associate</th>
+									<th class = "tablealign">VP+</th>
+									<th></th>
+									<th></th>
+									<th class = "tablealign">M&A</th>
+									<th class = "tablealign">PE</th>
+									<th class = "tablealign">Corp. Dev.</th>
+									<th class = "tablealign">Finance</th>
+								</tr>
+							</thead>
+		
+							<tbody class = "tabletext">
+								<% @recruiters.each do |data| %>       
+									<tr>
+									<td><%= data.name %></td>  
+									<td class = "tablealign"><%= data.grads %></td>
+									<td class = "tablealign"><%= data.junior %></td>
+									<td class = "tablealign"><%= data.experienced %></td>
+									<td class = "tablealign"><%= data.vicepresident %></td>
+									<td></td>
+									<td></td>
+									<td class = "tablealign"><%= data.advisory %></td>
+									<td class = "tablealign"><%= data.privateequity %></td>
+									<td class = "tablealign"><%= data.corporate %></td>
+									<td class = "tablealign"><%= data.finance %></td>
+									</tr>
+									<% end %>
+							</tbody>
+						</table>	
+					</div>
+				</div>
+			
+				<div class="col-sm-4">
+					<div class="well">
+						<h5 class = "posttitle">Send us your questions anonymously</h5><br>
+						<%= link_to "Click here", contacts_path, class: "btn btn-danger" %>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
+
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="offcanvas.js"></script>
+	</body>

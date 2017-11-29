@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Bare - Start Bootstrap Template</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+
+	
+</head>
+
+<body class="toppadding">
+	<div class="container">
+	
+		<div class="row">
+			<h1>Pay & bonus benchmarking</h1>
+			<p class="lead"></p>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-7 text-left">
+				<div class="table-responsive">
+					
+					<% @pays.each do |data| %>
+					
+					<table id="example" class="table table-hover">
+						
+							<h4>Pay & bonus <span class="label label-default"><%= data.name %></span></h4>
+						
+							<thead class = "tabletext">
+								<tr>
+								<th></th>
+								<th>Base</th>
+								<th></th>
+								<th>Bonus</th>
+								</tr>
+							</thead>
+						
+							<tbody  class = "tabletext">
+								<tr>
+								<th>Analyst</th>
+								<td><%= "£" + number_with_delimiter(data.analystbaselow.to_s, :delimiter => ',') + " - " + "£" + number_with_delimiter(data.analystbasehigh.to_s, :delimiter => ',') %></td>
+								<td><p>plus</p></td>
+								<td><%= "£" + number_with_delimiter(data.analystbonuslow.to_s, :delimiter => ',') + " - " + "£" + number_with_delimiter(data.analystbonushigh.to_s, :delimiter => ',') %></td>
+								</tr>
+								
+								<tr>
+								<th>Associate</th>
+								<td><%= "£" + number_with_delimiter(data.associatebaselow.to_s, :delimiter => ',') + " - " + "£" + number_with_delimiter(data.associatebasehigh.to_s, :delimiter => ',') %></td>
+								<td><p>plus</p></td>
+								<td><%= "£" + number_with_delimiter(data.associatebonuslow.to_s, :delimiter => ',') + " - " + "£" + number_with_delimiter(data.associatebonushigh.to_s, :delimiter => ',') %></td>
+								</tr>
+								
+								<tr>
+								<th>VP</th>
+								<td><%= "£" + number_with_delimiter(data.vpbaselow.to_s, :delimiter => ',') + " - " + "£" + number_with_delimiter(data.vpbasehigh.to_s, :delimiter => ',') %></td>
+								<td><p>plus</p></td>
+								<td><%= "£" + number_with_delimiter(data.vpbonuslow.to_s, :delimiter => ',') + " - " + "£" + number_with_delimiter(data.vpbonushigh.to_s, :delimiter => ',') %></td>
+								</tr>
+								<% end %>
+							</tbody>
+					
+					</table>	
+				</div>
+				
+				
+				
+			</div>
+		
+			<div class="col-sm-5">
+				
+				<div class="well">
+					<dl>Bonuses vary by firm and by year, as well as being subject to differing mixes of cash vs stock vs deferred</dl>
+					<dl>The ranges opposite ignore outliers, in particular zero bonuses which are often used to encourage underperformers to leave</dl>
+				</div>
+				
+				<div class="well">
+					<h5 class = "posttitle">Help us keep our information up to date - share insight into your firm anonymously</h5><br>
+					<%= link_to "Click here", contacts_path, class: "btn btn-danger" %>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

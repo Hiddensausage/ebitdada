@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+    
+	<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="offcanvas.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	
+  </head>
+
+	<div class="row toppadding">
+		<div class="col-md-6 col-md-offset-3">
+				<%= form_for @recruiter do |x| %>
+				  
+				<p>
+				<%= x.label :name %><br/>
+				<%= x.text_field :name, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :location %><br/>
+				<%= x.text_field :location, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :advisory %><br/>
+				<%= x.text_field :advisory, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :private_equity %><br/>
+				<%= x.text_field :privateequity, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :corporate %><br/>
+				<%= x.text_field :corporate, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :finance %><br/>
+				<%= x.text_field :finance, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :other %><br/>
+				<%= x.text_field :other, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :grads %><br/>
+				<%= x.text_field :grads, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :junior %><br/>
+				<%= x.text_field :junior, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :experienced %><br/>
+				<%= x.text_field :experienced, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :vp_plus %><br/>
+				<%= x.text_field :vicepresident, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :description %><br/>
+				<%= x.text_field :description, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :contacts %><br/>
+				<%= x.text_field :contact, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :clients %><br/>
+				<%= x.text_field :client, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.label :website %><br/>
+				<%= x.text_field :website, class: 'form-control' %><br/>
+				</p>
+				
+				<p>
+				<%= x.submit "Add a new entry" %>
+				</p>
+				
+				
+				<% end %>
+				</div>
+		</div>
